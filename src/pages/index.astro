@@ -1,0 +1,90 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation';
+import Hero from '../components/sections/Hero';
+import WorkExperience from '../components/sections/WorkExperience';
+import Education from '../components/sections/Education';
+import Skills from '../components/sections/Skills';
+import Projects from '../components/sections/Projects';
+import Contact from '../components/sections/Contact';
+import { ThemeProvider } from '../components/ThemeProvider';
+---
+
+<Layout>
+  <ThemeProvider client:load>
+    <Navigation client:load />
+    <main>
+      <Hero client:load />
+      
+      <WorkExperience client:load />
+      
+      <Education client:load />
+      
+      <Skills client:load />
+      
+      <Projects client:load />
+    </main>
+
+    <Contact client:load />
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
+      <div class="max-w-7xl mx-auto container-padding py-8">
+        <div class="text-center text-gray-600 dark:text-gray-400">
+          <p>&copy; 2025 Nathan Bryant. All rights reserved.</p>
+          <p class="text-sm mt-2">
+            Built with <a href="https://astro.build" class="text-primary-600 dark:text-primary-400 hover:underline">Astro</a>, 
+            <a href="https://react.dev" class="text-primary-600 dark:text-primary-400 hover:underline">React</a>, and 
+            <a href="https://tailwindcss.com" class="text-primary-600 dark:text-primary-400 hover:underline">Tailwind CSS</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </ThemeProvider>
+</Layout>
+
+<script>
+  // Smooth scrolling for anchor links
+  document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('a[href^="#"]');
+    
+    links.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = (e.currentTarget as HTMLAnchorElement).getAttribute('href');
+        if (!targetId) return;
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  });
+
+  // Update copyright year
+  const currentYear = new Date().getFullYear();
+  const copyrightElements = document.querySelectorAll('footer p');
+  copyrightElements.forEach(element => {
+    if (element.textContent?.includes('2025')) {
+      element.textContent = element.textContent.replace('2025', currentYear.toString());
+    }
+  });
+</script>
+
+<style>
+  /* Additional page-specific styles if needed */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Ensure smooth scrolling works on all browsers */
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+</style>

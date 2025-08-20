@@ -1,0 +1,462 @@
+---
+// Resume page using provided HTML design
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Bryant - Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.4;
+            color: #2c3e50;
+            background: #ffffff;
+        }
+        
+        .resume-container {
+            width: 8.5in;
+            min-height: 11in;
+            margin: 0 auto;
+            background: white;
+            display: flex;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        /* Golden ratio layout adjusted for better balance */
+        .main-content {
+            flex: 2.2;
+            padding: 0.6in 0.4in 0.5in 0.5in;
+        }
+        
+        .sidebar {
+            flex: 1;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 0.6in 0.35in 0.5in 0.35in;
+        }
+        
+        /* Header */
+        .header {
+            margin-bottom: 0.3in;
+        }
+        
+        .name {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 0.05in;
+            letter-spacing: -0.5px;
+        }
+        
+        .title {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            font-weight: 500;
+            margin-bottom: 0.15in;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.15in;
+            font-size: 0.85rem;
+            color: #34495e;
+        }
+        
+        .contact-info span {
+            display: flex;
+            align-items: center;
+        }
+        
+        /* Professional Summary */
+        .section {
+            margin-bottom: 0.25in;
+        }
+        
+        .section-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.1in;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.05in;
+        }
+        
+        .summary-text {
+            font-size: 0.9rem;
+            text-align: justify;
+            line-height: 1.5;
+            color: #34495e;
+        }
+        
+        /* Work Experience */
+        .job {
+            margin-bottom: 0.2in;
+        }
+        
+        .job-header {
+            margin-bottom: 0.08in;
+        }
+        
+        .job-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .company-info {
+            font-size: 0.8rem;
+            color: #7f8c8d;
+            margin-top: 0.02in;
+        }
+        
+        .job-description {
+            font-size: 0.85rem;
+            line-height: 1.4;
+            color: #34495e;
+            margin-top: 0.08in;
+        }
+        
+        .achievements {
+            list-style: none;
+            margin-top: 0.08in;
+        }
+        
+        .achievements li {
+            font-size: 0.8rem;
+            line-height: 1.4;
+            margin-bottom: 0.05in;
+            padding-left: 0.12in;
+            position: relative;
+            color: #34495e;
+        }
+        
+        .achievements li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+        }
+        
+        .tech-stack {
+            font-size: 0.75rem;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-top: 0.06in;
+        }
+        
+        /* Education */
+        .education-item {
+            margin-bottom: 0.15in;
+        }
+        
+        .degree {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #ecf0f1;
+            line-height: 1.3;
+        }
+        
+        .school-info {
+            font-size: 0.75rem;
+            color: #bdc3c7;
+            margin-top: 0.02in;
+        }
+        
+        /* Profile Photo */
+        .profile-photo {
+            text-align: center;
+            margin-bottom: 0.3in;
+            margin-top: 0.3in;
+        }
+        
+        .avatar {
+            width: 2in;
+            height: 2in;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ecf0f1;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        
+        /* Sidebar Styles */
+        .sidebar-section {
+            margin-bottom: 0.25in;
+        }
+        
+        .sidebar-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0.1in;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #ecf0f1;
+            border-bottom: 1px solid #556983;
+            padding-bottom: 0.05in;
+        }
+        
+        .skills-category {
+            margin-bottom: 0.15in;
+        }
+        
+        .skills-category-title {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #ecf0f1;
+            margin-bottom: 0.05in;
+        }
+        
+        .skills-list {
+            font-size: 0.75rem;
+            line-height: 1.4;
+            color: #bdc3c7;
+        }
+        
+        .project {
+            margin-bottom: 0.12in;
+        }
+        
+        .project-title {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #ecf0f1;
+            margin-bottom: 0.03in;
+        }
+        
+        .project-description {
+            font-size: 0.75rem;
+            line-height: 1.4;
+            color: #bdc3c7;
+        }
+        
+        /* Page Break */
+        .page-break {
+            page-break-before: always;
+        }
+        
+        @media print {
+            body { margin: 0; }
+            .resume-container { 
+                box-shadow: none; 
+                width: 100%;
+                min-height: 100vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="main-content">
+            <!-- Header -->
+            <div class="header">
+                <h1 class="name">NATHAN BRYANT</h1>
+                <div class="title">Electrical Engineer</div>
+                <div class="contact-info">
+                    <span>📧 bryantpdx@live.com</span>
+                    <span>📱 503-443-0648</span>
+                    <span>📍 Portland, Oregon</span>
+                    <span>🔗 github.com/Debrant</span>
+                    <span>💼 linkedin.com/in/bryantengineering</span>
+                </div>
+            </div>
+            
+            <!-- Professional Summary -->
+            <div class="section">
+                <h2 class="section-title">Professional Summary</h2>
+                <p class="summary-text">
+                    Multidisciplinary engineering leader with expertise in embedded systems architecture and industrial automation. Led development of patented motion-control platforms achieving 100-micron positioning accuracy for multi-ton systems. Built and scaled engineering teams while delivering complex products from concept to production, including high-power electric tools and precision manufacturing systems. Combines deep technical execution with strategic leadership across electronics, firmware, and mechanical integration.
+                </p>
+            </div>
+            
+            <!-- Work Experience -->
+            <div class="section">
+                <h2 class="section-title">Professional Experience</h2>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Co-Founder / Principal Engineer</div>
+                        <div class="company-info">Continuum Design Build, LLC | Portland, Oregon | 2024 - Present</div>
+                    </div>
+                    <div class="job-description">
+                        Co-founded design-build company specializing in historic remodels and restorations for high-end residential and commercial clients.
+                    </div>
+                    <ul class="achievements">
+                        <li>Automated internal company functions and optimized workflow efficiency using engineering expertise</li>
+                        <li>Converted Sprinter van into fully equipped mobile workshop for on-site fabrication capabilities</li>
+                        <li>Integrated advanced smart home features into historic preservation projects</li>
+                        <li>Maintained 75% residential / 25% commercial client portfolio with standout results</li>
+                    </ul>
+                    <div class="tech-stack">Smart Home Integration, Mobile Workshop Design, IoT Systems, Historic Restoration</div>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Manager, Electrical Engineering</div>
+                        <div class="company-info">Oregon Tool, Inc. | Portland, Oregon | 2021 - 2024</div>
+                    </div>
+                    <div class="job-description">
+                        Recruited to build and lead new Electrical Engineering department for the world's largest bar and chain manufacturer.
+                    </div>
+                    <ul class="achievements">
+                        <li>Directed development and launch of 5kW liquid-cooled concrete chainsaw—among the most powerful electric cutting tools in its class</li>
+                        <li>Built Electrical Engineering department from ground up, establishing processes and technical standards</li>
+                        <li>Led compliance testing for UL, CE, and global certification standards</li>
+                        <li>Developed electric product lines for forestry and construction applications</li>
+                    </ul>
+                    <div class="tech-stack">High-Power Electronics, Liquid Cooling, PCB Design, Firmware, UL/CE Compliance, Motor Control</div>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Electrical Engineer → Lead Engineer → Director R&D → Director Operations</div>
+                        <div class="company-info">TigerStop, LLC | Portland, Oregon | 2015 - 2021</div>
+                    </div>
+                    <div class="job-description">
+                        Progressed through multiple leadership roles, culminating in operational oversight and patent development.
+                    </div>
+                    <ul class="achievements">
+                        <li>Co-designed system architectures and authored IP that became foundation of company's motion-control patent</li>
+                        <li>Corrected long-standing PWM control flaw, reducing motor heating and increasing push capacity</li>
+                        <li>Designed custom transformers for PCB-based switch-mode power supplies</li>
+                        <li>Led ERP/MES/CRM integration and vertical integration initiative saving ~$1M annually</li>
+                        <li>Reduced tech support training from one year to 90 days while improving customer outcomes</li>
+                    </ul>
+                    <div class="tech-stack">CAN Bus, EtherCAT, Motion Control, PWM, UL508A Compliance, ERP Integration</div>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Test Engineer</div>
+                        <div class="company-info">Allion USA | Portland, Oregon | 2014</div>
+                    </div>
+                    <ul class="achievements">
+                        <li>Executed interoperability testing for Microsoft, Amazon, and Intel</li>
+                        <li>Designed and built semi-anechoic chamber at one-third commercial cost</li>
+                    </ul>
+                    <div class="tech-stack">EMI Testing, Semi-Anechoic Chamber Design, Interoperability Testing</div>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Manager, Engineering Prototypes Laboratory</div>
+                        <div class="company-info">Portland State University | Portland, Oregon | 2013 - 2015</div>
+                    </div>
+                    <ul class="achievements">
+                        <li>Oversaw daily operations of precision fabrication and testing laboratory</li>
+                        <li>Trained students and industry partners on equipment operation and safety</li>
+                    </ul>
+                    <div class="tech-stack">CNC Machining, 3D Printing, Laboratory Management, Precision Fabrication</div>
+                </div>
+            </div>
+            
+
+        </div>
+        
+        <div class="sidebar">
+            <!-- Profile Photo -->
+            <div class="profile-photo">
+                <img src="/avatar.jpg" alt="Nathan Bryant" class="avatar">
+            </div>
+            
+            <!-- Core Competencies -->
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Core Competencies</h3>
+                
+                <div class="skills-category">
+                    <div class="skills-category-title">Electrical Engineering</div>
+                    <div class="skills-list">PCB Design • Firmware Development • Circuit Analysis • Power Electronics • Motor Control • PWM Control • Analog/Digital Design • Embedded Systems • Industrial Controls</div>
+                </div>
+                
+                <div class="skills-category">
+                    <div class="skills-category-title">Leadership & Management</div>
+                    <div class="skills-list">Talent Acquisition • Mentorship • Career Development • Product Roadmapping • Process Planning • Team Building • Strategic Planning</div>
+                </div>
+                
+                <div class="skills-category">
+                    <div class="skills-category-title">Communication Protocols</div>
+                    <div class="skills-list">CAN Bus • RS-232/485 • EtherCAT • SPI • I2C • Bluetooth • Zigbee • TCP/IP • UDP • UART</div>
+                </div>
+                
+                <div class="skills-category">
+                    <div class="skills-category-title">Design & CAD Tools</div>
+                    <div class="skills-list">Altium Designer • SolidWorks • Cadence • LT-Spice • KiCad • AutoCAD • Fusion 360 • Eagle CAD</div>
+                </div>
+                
+                <div class="skills-category">
+                    <div class="skills-category-title">Programming</div>
+                    <div class="skills-list">C/C++ • Python • MATLAB • Arduino • ARM • VHDL • Assembly • Device Drivers • Linux • Git</div>
+                </div>
+                
+                <div class="skills-category">
+                    <div class="skills-category-title">Manufacturing</div>
+                    <div class="skills-list">CNC Machining • 3D Printing • Precision Fabrication • Lean Manufacturing • Supply Chain • Vertical Integration</div>
+                </div>
+            </div>
+            
+            <!-- Notable Projects -->
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Notable Projects</h3>
+                
+                <div class="project">
+                    <div class="project-title">US Patent 20210046596A1</div>
+                    <div class="project-description">Co-invented modular snap-together positioning system with wireless communication capabilities</div>
+                </div>
+                
+                <div class="project">
+                    <div class="project-title">5kW Liquid-Cooled Chainsaw</div>
+                    <div class="project-description">Led development of one of the most powerful electric cutting tools in its class</div>
+                </div>
+                
+                <div class="project">
+                    <div class="project-title">Precision Motion Control</div>
+                    <div class="project-description">Achieved 100-micron positioning accuracy for systems moving loads over one ton</div>
+                </div>
+                
+                <div class="project">
+                    <div class="project-title">Semi-Anechoic Chamber</div>
+                    <div class="project-description">Built testing chamber at 20% of commercial cost while maintaining equivalent performance</div>
+                </div>
+                
+                <div class="project">
+                    <div class="project-title">Custom Power Supply Design</div>
+                    <div class="project-description">Designed transformers and PCB-based switch-mode power supplies meeting Bell Labs specifications</div>
+                </div>
+                
+                <div class="project">
+                    <div class="project-title">Vertical Integration Initiative</div>
+                    <div class="project-description">Led manufacturing integration resulting in ~$1M annual savings</div>
+                </div>
+            </div>
+            
+            <!-- Education -->
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Education</h3>
+                
+                <div class="education-item">
+                    <div class="degree">Master of Science in Electrical and Computer Engineering</div>
+                    <div class="school-info">Portland State University | 2021</div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="degree">Bachelor of Science in Electrical Engineering & Physics</div>
+                    <div class="school-info">Portland State University | 2015</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
