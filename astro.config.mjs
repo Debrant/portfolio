@@ -10,7 +10,7 @@ export default defineConfig({
       applyBaseStyles: false,
     })
   ],
-  site: 'https://yourdomain.com',
+  site: 'https://originathan.com',
   base: '/',
   adapter: netlify(),
   vite: {
