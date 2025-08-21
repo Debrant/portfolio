@@ -1,0 +1,125 @@
+NATHAN BRYANT
+Electrical Engineer
+
+Contact Information:
+Email: bryantpdx@live.com
+Phone: 503-443-0648
+Location: Portland, Oregon
+GitHub: https://github.com/Debrant
+LinkedIn: https://github.com/Debrant
+
+PROFESSIONAL SUMMARY
+
+Nathan Bryant — Engineering Leader | Embedded Systems Architect | Inventor
+
+Multidisciplinary engineer with a track record of designing and delivering complex, high-performance systems that bridge electronics, firmware, and mechanical integration. Over my career, I've led projects from concept to production, building proprietary platforms that push the limits of accuracy, reliability, and usability in demanding industrial environments.
+
+At TigerStop, I was the lead designer of a patented embedded ecosystem for material processing systems. These platforms achieved linear positioning accuracy within 100 microns while moving loads over a ton, seamlessly integrating with standard industrial equipment over CAN bus, RS protocols, and EtherCAT. I was responsible for component selection, PCB layout, prototyping, and firmware development, ensuring that the system architecture met both performance and manufacturability goals.
+
+Beyond my technical execution, I've led cross-disciplinary teams, navigated ERP migrations, co-founded a design-build company specializing in restoring historic architecture, and explored applications of EEG-based neurofeedback for wellness and clinical use. My work spans automation, manufacturing, neurotechnology, and R&D leadership, but my focus is constant: building systems that work—technically, strategically, and humanely.
+
+I thrive where innovation meets execution, and where bold ideas need to be turned into robust, real-world solutions.
+
+WORK EXPERIENCE
+
+Co-Founder / Principal Engineer
+Continuum Design Build, LLC | Portland, Oregon | 2024 - Present
+
+Co-founded Continuum Design Build with a focus on historic remodels and restorations for high-end residential and select commercial clients (including doctors' offices, yoga studios, and bars).
+
+• Leveraged engineering and project management expertise to automate internal company functions and optimize workflow efficiency
+• Converted a Sprinter van into a fully equipped mobile workshop, enabling on-site fabrication and rapid response capabilities
+• Integrated advanced smart home features into customer environments, blending modern technology with historic preservation
+• Maintained a client portfolio that is approximately 75% residential and 25% commercial, delivering standout results in complex renovation environments
+• Combined engineering innovation, craftsmanship, and project efficiency to exceed client expectations in high-end restoration projects
+
+Technologies: Smart Home Integration, Mobile Workshop Design, Project Management Automation, Historic Restoration, IoT Systems, Embedded Controls
+
+Manager, Electrical Engineering
+Oregon Tool, Inc. | Portland, Oregon | 2021 - 2024
+
+Recruited to build and lead a new Electrical Engineering department, hiring and training both engineers and lab technicians. Tasked with roadmapping and implementing new electric product lines and smart tools for Oregon Tool, the world's largest manufacturer of bar and chain.
+
+• Directed the development and successful launch of a 5kW liquid-cooled concrete-cutting chainsaw—one of the most powerful electric cutting tools in its class
+• Built and led new Electrical Engineering department from the ground up, establishing team processes and technical standards
+• Balanced leadership responsibilities with hands-on engineering work, including PCB revisions, firmware optimization, and vendor coordination
+• Ensured compliance testing to meet UL, CE, and global certification standards for international market acceptance
+• Developed electric product lines for forestry (chainsaws) and construction (concrete saws) applications
+
+Technologies: High-Power Electronics, Liquid Cooling Systems, PCB Design, Firmware Development, UL/CE Compliance, Electric Motor Control, Battery Management Systems
+
+Electrical & Embedded Systems Engineer → Lead Electrical Engineer → Director of R&D → Director of Operations
+TigerStop, LLC | Portland, Oregon | 2015 - 2021
+
+Joined TigerStop as Electrical and Embedded Systems Engineer, quickly progressing to Lead Electrical Engineer, then Director of R&D, and finally Director of Operations.
+
+• Electrical & Embedded Systems Engineer (2015–2016): Established reputation as natural troubleshooter, diagnosing and resolving every technical challenge assigned. Discovered and corrected long-standing flaw in sinusoidal PWM control loop for three-phase motor control, reducing motor heating and increasing push capacity
+• Lead Electrical Engineer (2016–2018): Co-designed new system architectures and authored intellectual property that became foundation of company's motion-control patent. Designed custom transformers for PCB-based switch-mode power supply, improving energy efficiency and thermal performance. Upgraded robotic saw system control boxes to meet UL508A compliance
+• Director of R&D (2019–2020): Finalized patent process in collaboration with IP attorneys. Hired, trained, and developed engineering team. Implemented VoIP telephony system with integrated call tracking. Overhauled tech support training, cutting training period from one year to 90 days while improving customer outcomes
+• Director of Operations (2021): Led ERP, MES, and CRM system integration projects. Finalized vertical integration initiative bringing all sheet steel manufacturing in-house, resulting in ~$1M annual savings. Navigated operational challenges during first year of COVID-19
+
+Technologies: CAN Bus, RS-232/485, EtherCAT, PCB Design, Firmware Development, Motion Control, PWM Control, UL508A Compliance, ERP/MES/CRM Integration, Lean Manufacturing
+
+Test Engineer
+Allion USA | Portland, Oregon | 2014
+
+Executed peer-to-peer interoperability testing for Allion's high-profile client portfolio, including Microsoft, Amazon, and Intel.
+
+• Designed and documented comprehensive test plans to validate device performance against industry specifications
+• Designed, documented, and built a semi-anechoic chamber from scratch—creating a reusable template that delivered equivalent performance at roughly one-third the cost of a commercial kit
+• Significantly reduced capital expenditure while enhancing in-house testing capability
+• Created testing methodologies to identify integration issues in pre-launch products
+
+Technologies: Interoperability Testing, EMI Testing, Semi-Anechoic Chamber Design, Test Plan Development, Technical Documentation
+
+Manager, Engineering Prototypes Laboratory
+Portland State University | Portland, Oregon | 2013 - 2015
+
+Oversaw the daily operations of PSU's Engineering Prototypes Laboratory, maintaining precision fabrication and testing equipment including CNC machines, 3D printers, oscilloscopes, and soldering/rework stations.
+
+• Trained both students and industry partners on proper operation and safety procedures, enabling efficient and effective use of laboratory resources
+• Assisted in the design, fabrication, and assembly of prototypes spanning mechanical, electrical, and interdisciplinary engineering domains
+• Provided a bridge between academic coursework and hands-on technical execution, giving students a professional-grade prototyping experience
+• Maintained precision fabrication and testing equipment to ensure optimal performance and safety standards
+
+Technologies: CNC Machining, 3D Printing, Oscilloscopes, Soldering/Rework Stations, Precision Fabrication, Laboratory Management
+
+EDUCATION
+
+Master of Science in Electrical and Computer Engineering
+Portland State University | Portland, Oregon | 2021
+Coursework: Front End Development, Info Security, Cyber Physical Systems, Physical Design of Integrated Circuits, Control Systems Design, Advanced Digital Design, Analog Design
+
+Bachelor of Science in Electrical Engineering & Physics
+Portland State University | Portland, Oregon | 2015
+Coursework: Quantum Mechanics, Electron Microscopy, Nano Devices, Semiconductor Physics, Fourier Analysis, IC Technologies, Microprocessors, Industry Design Process, Electronics Packaging, Digital Design, Feedback and Control Systems
+
+CORE COMPETENCIES
+
+Electrical Engineering: PCB Design, Firmware Development, Circuit Analysis, Power Electronics, Motor Control, PWM Control, Analog Design, Digital Design, Embedded Systems, Industrial Controls
+
+Leadership: Talent Acquisition, Mentorship, Onboarding, Career Development, Coaching, Product Road Mapping, Presentation, Data Trends, Profit Velocity Mapping, Flow Charting, Process Planning
+
+Communication Protocols: CAN Bus, RS-232/485, EtherCAT, SPI, I2C, JTAG, SWI, Bluetooth, Bluetooth Low Energy, Zigbee, NFC, TCP/IP, UDP, SSH, UART, Web Sockets
+
+Design & CAD Tools: Altium Designer, SolidWorks, Cadence, LT-Spice, KiCad, AutoCAD, Fusion 360, PowerSim, Eagle CAD, Solid Edge, Revit, SketchUp
+
+Programming & Development: C/C++, Python, MATLAB, Arduino, ARM, Keil, Git, Command Line, Linux, Embedded Linux, VHDL, Assembly, Device Drivers, Device Trees
+
+Project Management: Wrike, ClickUp, Monday, Jira, Confluence, Redmine, Lean Manufacturing, ERP/MES/CRM Integration
+
+Testing & Compliance: EMI Testing, UL/CE Compliance, Interoperability Testing, Semi-Anechoic Chamber Design, Test Plan Development, Design of Tests
+
+Manufacturing & Operations: CNC Machining, 3D Printing, Precision Fabrication, Laboratory Management, Supply Chain Optimization, Vertical Integration, Lean Manufacturing, Fiber Laser, Press Brake, Work Cell Optimization, Spaghetti Diagrams, Factory Flow
+
+Software & Tools: Visual Studio, Jupyter Labs, LaTeX, MS Office, TeamCenter, PowerSim, SFTP, Epicor, Raspberry Pi, Eclipse, PyCharm, Network Analyzer, Oscilloscopes, Benchtop Tools
+
+NOTABLE PROJECTS & ACHIEVEMENTS
+
+• US Patent 20210046596A1: Co-invented modular snap-together positioning system with wireless communication capabilities
+• Led development of 5kW liquid-cooled concrete chainsaw, one of the most powerful electric cutting tools in its class
+• Designed custom transformers and PCB-based switch-mode power supply systems meeting Bell Labs specifications
+• Built semi-anechoic chamber at 20% of commercial cost while maintaining equivalent performance
+• Achieved linear positioning accuracy within 100 microns for systems moving loads over a ton
+• Reduced tech support training from one year to 90 days while improving customer outcomes
+• Led vertical integration initiative resulting in ~$1M annual savings
