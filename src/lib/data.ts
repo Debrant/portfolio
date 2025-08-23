@@ -89,6 +89,21 @@ export const personalInfo: PersonalInfo = {
 
 export const workExperience: WorkExperience[] = [
   {
+    company: "LiquidXR",
+    location: "Portland, Oregon",
+    position: "Contract Firmware Engineer",
+    period: "2024 - Present",
+    description: "Optimizing firmware and adding functionality to wearable motion tracking systems using Liquid Wire technology. LiquidXR, an offshoot of Liquid Wire, creates metal gel conductors that maintain stability through oxide layer formation in flexible substrates, remaining conductive even when stretched 20x original length and after millions of deformations.",
+    achievements: [
+      "Optimize existing firmware for IMU sensor networks and ADC modules embedded in nylon/spandex armbands and gloves",
+      "Enhance device functionality and usability for real-time arm and hand movement monitoring in physical therapy",
+      "Collaborate with augmented reality, virtual reality, medical therapeutics, and athletic training partners",
+      "Improve communication protocols and device environment for flexible conductor networks",
+      "Add new features and optimize performance for motion tracking applications"
+    ],
+    technologies: ["Embedded Firmware", "IMU Sensors", "ADC Integration", "Wearable Electronics", "Motion Tracking", "Real-time Systems", "Medical Devices", "Flexible Electronics", "Communication Protocols"]
+  },
+  {
     company: "Continuum Design Build, LLC",
     location: "Portland, Oregon",
     position: "Co-Founder / Principal Engineer",
